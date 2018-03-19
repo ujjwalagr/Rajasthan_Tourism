@@ -11,14 +11,23 @@ public class Splash extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        new Handler().postDelayed(new Runnable(){
+        Thread th = new Thread()
+        {
             @Override
             public void run() {
-                /* Create an Intent that will start the Menu-Activity. */
-                Intent mainIntent = new Intent(Splash.this,Slider.class);
-                Splash.this.startActivity(mainIntent);
-                Splash.this.finish();
+                try
+                {
+                    sleep(3000);
+                }
+                catch (Exception h)
+                {
+                }
+                finally {
+                    Intent i = new Intent(Splash.this,Slider.class);
+                    startActivity(i);
+                }
             }
-        }, 1000);
+        };
+        th.start();
     }
 }
