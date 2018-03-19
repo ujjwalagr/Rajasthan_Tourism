@@ -17,7 +17,7 @@ public class Splash extends AppCompatActivity {
             public void run() {
                 try
                 {
-                    sleep(3000);
+                    sleep(1000);
                 }
                 catch (Exception h)
                 {
@@ -25,6 +25,7 @@ public class Splash extends AppCompatActivity {
                 finally {
                     Intent i = new Intent(Splash.this,Slider.class);
                     startActivity(i);
+                    finish();
                 }
             }
         };
