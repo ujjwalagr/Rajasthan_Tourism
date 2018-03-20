@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/jodhpur">
+    android:background="@drawable/jodhpur"
+    android:fitsSystemWindows="true">
 
     <TextView
         android:id="@+id/textView2"
@@ -11,8 +12,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:fontFamily="monospace"
-        android:text="JAANE KYA DIKH JAAYE"
+        android:fontFamily="@font/secular_one"
+        android:text="@string/textjpr1"
         android:textColor="@android:color/white"
         android:textSize="28dp"
         android:textStyle="bold" />

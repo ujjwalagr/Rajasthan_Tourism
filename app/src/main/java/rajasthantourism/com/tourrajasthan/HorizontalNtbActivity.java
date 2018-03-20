@@ -10,12 +10,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import devlight.io.library.ntb.NavigationTabBar;
 
 import java.util.ArrayList;
 
-public class HorizontalNtbActivity extends Activity {
+public class HorizontalNtbActivity extends Activity implements View.OnClickListener {
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
@@ -48,26 +49,35 @@ public class HorizontalNtbActivity extends Activity {
                 final View view = LayoutInflater.from(
                         getBaseContext()).inflate(R.layout.item_vp, null, false);
 
-                final ImageView imageView1 = view.findViewById(R.id.imageView1);
+                final TextView imageView1 = view.findViewById(R.id.imageView1);
+                imageView1.setOnClickListener(HorizontalNtbActivity.this);
 
-                final ImageView imageView2 = view.findViewById(R.id.imageView2);
+                final TextView imageView2 = view.findViewById(R.id.imageView2);
+                imageView2.setOnClickListener(HorizontalNtbActivity.this);
 
-                final ImageView txtPage3 = view.findViewById(R.id.imageView3);
+                final TextView imageView3 = view.findViewById(R.id.imageView3);
+                imageView3.setOnClickListener(HorizontalNtbActivity.this);
 
-                final ImageView txtPage4 = view.findViewById(R.id.imageView4);
+                final TextView imageView4 = view.findViewById(R.id.imageView4);
+                imageView4.setOnClickListener(HorizontalNtbActivity.this);
 
-                final ImageView txtPage5 = view.findViewById(R.id.imageView5);
+                final TextView imageView5 = view.findViewById(R.id.imageView5);
+                imageView5.setOnClickListener(HorizontalNtbActivity.this);
 
-                final ImageView txtPage6 = view.findViewById(R.id.imageView6);
+                final TextView imageView6 = view.findViewById(R.id.imageView6);
+                imageView6.setOnClickListener(HorizontalNtbActivity.this);
 
-                final ImageView txtPage7 = view.findViewById(R.id.imageView7);
+                final TextView imageView7 = view.findViewById(R.id.imageView7);
+                imageView7.setOnClickListener(HorizontalNtbActivity.this);
 
-                final ImageView txtPage8 = view.findViewById(R.id.imageView8);
+                final TextView imageView8 = view.findViewById(R.id.imageView8);
+                imageView8.setOnClickListener(HorizontalNtbActivity.this);
 
                 container.addView(view);
                 return view;
             }
         });
+
 
         final String[] colors = getResources().getStringArray(R.array.default_preview);
 
@@ -103,7 +113,7 @@ public class HorizontalNtbActivity extends Activity {
         );
 
         navigationTabBar.setModels(models);
-        navigationTabBar.setViewPager(viewPager, 2);
+        navigationTabBar.setViewPager(viewPager, 0);
         navigationTabBar.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(final int position, final float positionOffset, final int positionOffsetPixels) {
@@ -135,5 +145,37 @@ public class HorizontalNtbActivity extends Activity {
                 }
             }
         }, 500);
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.imageView1:
+                Toast.makeText(this, "imageview1", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.imageView2:
+                Toast.makeText(this, "imageview2", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.imageView3:
+                Toast.makeText(this, "imageview3", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.imageView4:
+                Toast.makeText(this, "imageview4", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.imageView5:
+                Toast.makeText(this, "imageview5", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.imageView6:
+                Toast.makeText(this, "imageview6", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.imageView7:
+                Toast.makeText(this, "imageview7", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.imageView8:
+                Toast.makeText(this, "imageview8", Toast.LENGTH_SHORT).show();
+                break;
+            default:
+                Toast.makeText(this, "Koi nahi chala", Toast.LENGTH_SHORT).show();
+        }
     }
 }
