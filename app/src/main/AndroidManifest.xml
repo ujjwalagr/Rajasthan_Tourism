@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="rajasthantourism.com.tourrajasthan">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -17,14 +18,17 @@
             </intent-filter>
         </activity>
         <activity android:name=".Slider" />
-        <activity android:name=".Home" />
+
         <activity android:name=".HorizontalNtbActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
+
         <activity android:name=".RecyclerView"></activity>
+
+        <activity android:name=".LoginActivity"></activity>
     </application>
 
 </manifest>

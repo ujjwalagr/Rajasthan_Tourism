@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "454008029313",
+    "project_id": "rajasthantourism-198518"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454008029313:android:4c3ba6373af8eed9",
+        "android_client_info": {
+          "package_name": "rajasthantourism.com.tourrajasthan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454008029313-r2iqric71r513jrn0i08bdv17nl8a7n4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "rajasthantourism.com.tourrajasthan",
+            "certificate_hash": "d650d28eb636337d3b19d31565fe54e6888c4b96"
+          }
+        },
+        {
+          "client_id": "454008029313-nmc7jdsf0aso14ras0kl8b4ga45lpklv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9mZF103JRVXydXnI9E4GF7moo5Ct1l1E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
