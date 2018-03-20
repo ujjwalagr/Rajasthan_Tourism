@@ -49,7 +49,7 @@ public class Slider extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         SharedPreferences pref = getSharedPreferences("First_Time_Launched", Context.MODE_PRIVATE);
         if (pref.getBoolean("activity_executed", false)) {
-            Intent intent = new Intent(Slider.this, HorizontalNtbActivity.class);
+            Intent intent = new Intent(Slider.this, LoginActivity.class);
             startActivity(intent);
             finish();
         } else {
@@ -106,7 +106,7 @@ public class Slider extends AppCompatActivity {
     }
 
     private void launchHomeScreen() {
-        startActivity(new Intent(Slider.this, HorizontalNtbActivity.class));
+        startActivity(new Intent(Slider.this, LoginActivity.class));
         finish();
     }
 
