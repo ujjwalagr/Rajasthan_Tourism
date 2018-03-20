@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/logo"
-    tools:context="rajasthantourism.com.tourrajasthan.Splash">
+    tools:context="rajasthantourism.com.tourrajasthan.Splash"
+    android:fitsSystemWindows="true">
 
 
 </RelativeLayout>

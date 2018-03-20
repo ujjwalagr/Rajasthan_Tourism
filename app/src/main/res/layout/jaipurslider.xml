@@ -4,17 +4,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/jaipur">
+    android:background="@drawable/jaipur"
+    android:fitsSystemWindows="true">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
-        android:fontFamily="monospace"
+        android:fontFamily="@font/secular_one"
         android:text="@string/textjpr"
         android:textColor="@android:color/white"
+        android:gravity="center"
         android:textSize="28sp"
         android:textStyle="bold" />
 
