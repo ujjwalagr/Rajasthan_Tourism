@@ -18,11 +18,15 @@
             </intent-filter>
         </activity>
         <activity android:name=".Slider" />
+
         <activity android:name=".HorizontalNtbActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+
+        <activity android:name=".RecyclerView"></activity>
 
         <activity android:name=".LoginActivity"></activity>
     </application>
